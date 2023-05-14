@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    
+    <meta charset="UTF-8">
+    <title>Article Posting</title>
+    
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="shadow bg-light">
+        <nav class="container navbar">
+            <a href="/index.html" class="nav-brand text-dark">
+              Student <span>Blog</span>
+             </a>
+
+             <!-- toggle button -->
+             <button class="toggle-button">
+                 <span><i class="fas fa-bars"></i></span>
+             </button>
+
+             <!-- collapse on toggle button click -->
+             <div class="collapse">
+                 <ul class="navbar-nav">
+                     <a href="index.html" class="nav-link">Home</a>
+                     <a href="#" class="nav-link">Blog</a>
+                     <a href="#" class="nav-link">Categories</a>
+                     <a href="upload.html" class="nav-link">Upload</a>
+                     <a href="about us.html" class="nav-link">About</a>
+                     <a href="#" class="nav-link">Contact</a>
+                 </ul>
+             </div>
+
+               <!-- collapse on toggle button click -->
+               <div class="collapse">
+                   <ul class="navbar-nav">
+                         <div class="search-box">
+                             <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
+                         </div>
+                         <a href="#" class="nav-link"><i class="fab fa-facebook-f"></i></a>
+                         <a href="#" class="nav-link"><i class="fab fa-twitter"></i></a>
+                         <a href="#" class="nav-link"><i class="fab fa-instagram"></i></a>
+                        <!-- <a href="#" class="nav-link"><i class="fab fa-dribbble"></i></a>-->
+                   </ul>
+               </div>
+        </nav>
+    </header>
+
+
+    <!--==================================================uplaosd section==================================================-->
+    
+    <section class="upload">
+    <div class="container">
+        <div class="form-container">
+            <h2>Post an Article</h2>
+            <form action="#" method="post" enctype="multipart/form-data" id="articleForm">
+                <input type="text" id="titleInput" placeholder="Title" required><br>
+                <textarea id="contentInput" placeholder="Content" required></textarea><br>
+
+                <input type="file" name="image">
+               
+                <button type="submit">Post Article</button>
+            </form>
+        </div>
+
+        <div class="articles-container" id="articlesContainer">
+            <h2>Posted Articles</h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</section>
+</body>
+
+    
+</html>
