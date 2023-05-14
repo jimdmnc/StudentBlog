@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Comment Form</title>
+</head>
+<body>
+    <div class="comment-form">
+        <div class="d-flex justify-content-between flex-wrap">
+            <input type="text" id="name" class="form-control" placeholder="Name">
+            <input type="email" id="email" class="form-control" placeholder="Email">
+            <input type="text" id="website" class="form-control" placeholder="Website">
+        </div>
+        <textarea id="message" class="form-control mt-3" placeholder="Message" rows="10"></textarea>
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary display-2 text-light mt-2" onclick="postComment()">Submit</button>
+        </div>
+    </div>
+
+    <div id="comments-section">
+        <!-- Existing comments will be displayed here -->
+    </div>
+
+    <script>
+        function postComment() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var website = document.getElementById('website').value;
+            var message = document.getElementById('message').value;
+
+            var comment = document.createElement('div');
+            comment.innerHTML = '<strong>' + name + '</strong><br>' +
+                                '<a href="mailto:' + email + '">' + email + '</a><br>' +
+                                '<a href="' + website + '">' + website + '</a><br>' +
+                                '<p>' + message + '</p><hr>';
+
+            document.getElementById('comments-section').appendChild(comment);
+
+            // Clear input fields
+            document.getElementById('name').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('website').value = '';
+            document.getElementById('message').value = '';
+        }
+    </script>
+</body>
+</html>
