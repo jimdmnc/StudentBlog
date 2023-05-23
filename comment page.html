@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Comment Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f1f1f1;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+
+    .comment-container {
+      background-color: #fff;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .comment {
+      margin-bottom: 20px;
+      border: 3px solid rgb(226, 226, 226);
+    }
+
+    .comment .author {
+      font-weight: bold;
+    }
+
+    .comment .date {
+      color: #888;
+      font-size: 0.8em;
+    }
+
+    .comment .message {
+      margin-top: 10px;
+    }
+    span{
+      font-size: 15px;
+      color: #ccc;
+    }
+
+    .comment .message p {
+      margin: 0;
+    }
+
+    .comment-form {
+      margin-top: 20px;
+    }
+
+    .comment-form input,
+    .comment-form textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      resize: vertical;
+    }
+    .comment-title{
+      color: white;
+    }
+    .comment-form button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .comment-form button:hover {
+      background-color: #555;
+    }
+  </style>
+      <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   <!-- Header -->
+   <header id="header" class="shadow bg-light">
+    <nav class="container navbar">
+        <a href="/index.html" class="nav-brand text-dark">
+          Student <span>Blog</span>
+         </a>
+
+         <!-- toggle button -->
+         <button class="toggle-button">
+             <span><i class="fas fa-bars"></i></span>
+         </button>
+
+         <!-- collapse on toggle button click -->
+         <div class="collapse">
+             <ul class="navbar-nav">
+                 <a href="index.html" class="nav-link">Home</a>
+                 <a href="categories.html" class="nav-link">Categories</a>
+                 <a href="upload.html" class="nav-link">Upload</a>
+                 <a href="about us.html" class="nav-link">About</a>
+                 <a href="comment page.html" class="nav-link">Comments</a>
+                 <a href="contacts.html" class="nav-link">Contact</a>
+             </ul>
+         </div>
+
+           <!-- collapse on toggle button click -->
+           <div class="collapse">
+               <ul class="navbar-nav">
+                    <!--  <div class="search-box">
+                         <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
+                     </div>-->
+                     <a href="#" class="nav-link"><i class="fab fa-facebook-f"></i></a>
+                     <a href="#" class="nav-link"><i class="fab fa-twitter"></i></a>
+                     <a href="#" class="nav-link"><i class="fab fa-instagram"></i></a>
+                    <!-- <a href="#" class="nav-link"><i class="fab fa-dribbble"></i></a>-->
+               </ul>
+           </div>
+    </nav>
+</header>
+<!-- .Header -->
+  <h1 class="comment-title">Comment Page <span>(99+)</span></h1>
+
+  <div id="comment-container" class="comment-container">
+    <!-- Sample Comments -->
+    <div class="comment">
+      <div class="author">James Arthur</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at dolor vitae arcu vulputate pretium. Vestibulum nec tristique velit. Duis accumsan venenatis mauris ut lacinia.</p>
+      </div>
+    </div>
+
+  
+
+ <div class="comment">
+      <div class="author">Albert Einstein</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p>"I love how this website explores the diverse cultural exchanges that occur due to globalization. It's fascinating to see how traditions and customs are shared and celebrated across borders.</p>
+      </div>
+    </div>
+
+ <div class="comment">
+      <div class="author">Alden Richards</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p>"The globalization resources on this website have broadened my understanding of the interconnectedness of economies and the impact it has on global trade. It's helped me see the bigger picture </p>
+      </div>
+    </div>
+
+<div class="comment">
+      <div class="author">Gemar Pogi</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> I appreciate the thought-provoking articles on the social implications of globalization. It has made me more aware of the challenges and opportunities it presents for communities worldwide </p>
+      </div>
+    </div>
+
+
+<div class="comment">
+      <div class="author">Daniel Cruz</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> User Comment 5: "As an international student, this website has been a valuable source of information about studying abroad and the benefits of a global education. It has inspired me to explore more opportunities.</p>
+      </div>
+    </div>
+
+<div class="comment">
+      <div class="author">Jake Cyrus</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> I find the articles on this website about the impact of globalization on labor markets to be particularly insightful. They shed light on the importance of fair working conditions and workers' rights p>
+      </div>
+    </div>
+
+<div class="comment">
+      <div class="author">Cocomelon</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p>"I'd love to see more success stories on this website, showcasing how individuals and businesses have thrived in the era of globalization. It would be inspiring to read about real-life examples. </p>
+      </div>
+    </div>
+
+<div class="comment">
+      <div class="author">Bitch na peke</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+
+<div class="comment">
+      <div class="author">Arnlod watchniogaaa</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> This website has helped me recognize the interconnectedness of environmental issues and globalization. It's motivated me to take action and make sustainable choices </p>
+      </div>
+    </div>
+
+<div class="comment">
+      <div class="author">Myra Soliman</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+<div class="comment">
+      <div class="author">Karl Fernando</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+<div class="comment">
+      <div class="author">Exy Divi</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+<div class="comment">
+      <div class="author">Duanne Odimer</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+<div class="comment">
+      <div class="author">drake curysA</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+<div class="comment">
+      <div class="author">Naruto Shippuden</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+<div class="comment">
+      <div class="author">Albert Einstein</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+<div class="comment">
+      <div class="author">Albert Einstein</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+<div class="comment">
+      <div class="author">Dradon ball z</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+<div class="comment">
+      <div class="author">hey yow waszup</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+<div class="comment">
+      <div class="author">mami oni</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+<div class="comment">
+      <div class="author">Albert Einstein</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+<div class="comment">
+      <div class="author">Albert Einstein</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+<div class="comment">
+      <div class="author">Ernis nigga</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+<div class="comment">
+      <div class="author">jeddy yow</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+<div class="comment">
+      <div class="author">jackie chan</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+<div class="comment">
+      <div class="author">Albert Einstein</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+<div class="comment">
+      <div class="author">Albert Einstein</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+<div class="comment">
+      <div class="author">Albert Einstein</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+<div class="comment">
+      <div class="author">Albert Einstein</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+<div class="comment">
+      <div class="author">Albert Einstein</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+<div class="comment">
+      <div class="author">BOss toyo</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+<div class="comment">
+      <div class="author">Albert Einstein</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+<div class="comment">
+      <div class="author">Albert Einstein</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+<div class="comment">
+      <div class="author">Albert Einstein</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+    <div class="comment">
+      <div class="author">Alden Richards</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p>"The globalization resources on this website have broadened my understanding of the interconnectedness of economies and the impact it has on global trade. It's helped me see the bigger picture </p>
+      </div>
+    </div>
+
+<div class="comment">
+      <div class="author">Gemar Pogi</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> I appreciate the thought-provoking articles on the social implications of globalization. It has made me more aware of the challenges and opportunities it presents for communities worldwide </p>
+      </div>
+    </div>
+
+
+<div class="comment">
+      <div class="author">Daniel Cruz</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> User Comment 5: "As an international student, this website has been a valuable source of information about studying abroad and the benefits of a global education. It has inspired me to explore more opportunities.</p>
+      </div>
+    </div>
+
+<div class="comment">
+      <div class="author">Jake Cyrus</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> I find the articles on this website about the impact of globalization on labor markets to be particularly insightful. They shed light on the importance of fair working conditions and workers' rights p>
+      </div>
+    </div>
+
+<div class="comment">
+      <div class="author">Cocomelon</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p>"I'd love to see more success stories on this website, showcasing how individuals and businesses have thrived in the era of globalization. It would be inspiring to read about real-life examples. </p>
+      </div>
+    </div>
+
+<div class="comment">
+      <div class="author">Bitch na peke</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+
+<div class="comment">
+      <div class="author">Arnlod watchniogaaa</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> This website has helped me recognize the interconnectedness of environmental issues and globalization. It's motivated me to take action and make sustainable choices </p>
+      </div>
+    </div>
+
+<div class="comment">
+      <div class="author">Myra Soliman</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+<div class="comment">
+      <div class="author">Karl Fernando</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+<div class="comment">
+      <div class="author">Exy Divi</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+<div class="comment">
+      <div class="author">Duanne Odimer</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+<div class="comment">
+      <div class="author">drake curysA</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+<div class="comment">
+      <div class="author">Naruto Shippuden</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+<div class="comment">
+      <div class="author">Albert Einstein</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+<div class="comment">
+      <div class="author">Albert Einstein</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+<div class="comment">
+      <div class="author">Dradon ball z</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+<div class="comment">
+      <div class="author">hey yow waszup</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+<div class="comment">
+      <div class="author">mami oni</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+<div class="comment">
+      <div class="author">Albert Einstein</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+<div class="comment">
+      <div class="author">Albert Einstein</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+<div class="comment">
+      <div class="author">Albert Einstein</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+<div class="comment">
+      <div class="author">Albert Einstein</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+<div class="comment">
+      <div class="author">Albert Einstein</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+<div class="comment">
+      <div class="author">Albert Einstein</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+<div class="comment">
+      <div class="author">Albert Einstein</div>
+      <div class="date">May 20, 2023</div>
+      <div class="message">
+        <p> The historical perspective provided on this website helps me understand how globalization has evolved over time. It's interesting to see how it has shaped our world today </p>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="comment-form">
+    <input id="author-input" type="text" placeholder="Your Name">
+    <textarea id="comment-input" placeholder="Write a comment..."></textarea>
+    <button id="submit-btn">Submit</button>
+  </div>
+
+  <script>
+    // Function to create a new comment
+    function createComment(author, date, message) {
+      var comment = document.createElement('div');
+      comment.classList.add('comment');
+
+      var authorElem = document.createElement('div');
+      authorElem.classList.add('author');
+      authorElem.innerText = author;
+
+      var dateElem = document.createElement('div');
+      dateElem.classList.add('date');
+      dateElem.innerText = date;
+
+      var messageElem = document.createElement('div');
+      messageElem.classList.add('message');
+      var messagePara = document.createElement('p');
+      messagePara.innerText = message;
+      messageElem.appendChild(messagePara);
+
+      comment.appendChild(authorElem);
+      comment.appendChild(dateElem);
+      comment.appendChild(messageElem);
+
+      return comment;
+    }
+
+    // Function to handle form submission
+    function submitComment() {
+      var author = document.getElementById('author-input').value;
+      var date = new Date().toLocaleDateString(); // Get current date
+      var message = document.getElementById('comment-input').value;
+
+      if (author.trim() !== '' && message.trim() !== '') {
+        var newComment = createComment(author, date, message);
+
+        // Append the new comment to the comment container
+        var commentContainer = document.getElementById('comment-container');
+        commentContainer.appendChild(newComment);
+
+        // Clear the input fields
+        document.getElementById('author-input').value = '';
+        document.getElementById('comment-input').value = '';
+      }
+    }
+
+    // Event listener for form submission
+    document.getElementById('submit-btn').addEventListener('click', submitComment);
+  </script>
+</body>
+</html>
